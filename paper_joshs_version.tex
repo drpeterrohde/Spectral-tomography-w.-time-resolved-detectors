@@ -154,7 +154,7 @@ P_S(t_1,\dots,t_n|\psi_n)=|\psi(t_1,\dots,t_n)|^2.
 We model the photo-detectors as two-level systems which couple to the incident light, as employed by Metz \& Barrett \cite{bib:metz2008effect}. An incident photon excites the atom from the lower (ready) to the upper (triggered) level. Upon relaxation, the atom emits a photon which is detected by an ideal photo-detector. Thus, the two-level system acts as a buffer between the measured state and the detection process. The relaxation time of the atom determines the temporal resolving power of the detector. In the limit of a fast detector (i.e. quick relaxation time) the detector has delta function response, giving us perfect information about the measurement time of the detected photon, whereas for a slow detector the response is flat, yielding little information about the measurement time. The detector model is illustrated in Fig.~\ref{fig:det_model}.
 
 \begin{figure}[!htb]
-\includegraphics[width=0.7\columnwidth]{../figures/detector_model}
+\includegraphics[width=0.7\columnwidth]{figures/detector_model}
 \caption{Model for a time-resolved photo-detector. The incident light couples two a two-level system, stimulating it from the `ready' to the `triggered' state. The two-level system then relaxes and the emitted photon is measured. Thus, the two-level system acts as a buffer between the measured state and the measurement circuitry. The relaxation time $\gamma$ of the two-level system determines the detector's time resolution.} \label{fig:det_model}
 \end{figure}
 
@@ -175,7 +175,7 @@ where $\gamma$ now takes the role of the response time of the detector and $\bet
 
 The response function for this detector model is illustrated in Fig.~\ref{fig:detector_response} for varying response times, $\gamma$. Small $\gamma$ corresponds to a slow detector, and large $\gamma$ to a fast detector.
 \begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{../figures/detector_response}
+\includegraphics[width=\columnwidth]{figures/detector_response}
 \caption{(Colour online) Response function for a time-resolved detector with different response times, $\gamma$.} \label{fig:detector_response}
 \end{figure}
 
@@ -359,7 +359,7 @@ We now apply the Bayesian reconstruction technique to some practical examples, i
 \subsection{Two-photon Fock state}
 
 \begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{../figures/composite_fock}
+\includegraphics[width=\columnwidth]{figures/composite_fock}
 \caption{(Colour online) (a) Temporal distribution function for a two-photon Fock state. (b) Raw measurement data obtained from sampling the temporal distribution function using the photo-detectors. (c) Reconstruction based on the Bayesian algorithm. (d) Similarity of the measurement data and reconstructed data compared to the actual temporal distribution function, against detector response time $\gamma$.} \label{fig:composite_fock}
 \end{figure}
 
@@ -382,7 +382,7 @@ In Fig.~\ref{fig:composite_fock}(d) we plot the similarity of the raw measuremen
 \subsection{Two-photon spectral Bell state}
 
 \begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{../figures/composite_bell}
+\includegraphics[width=\columnwidth]{figures/composite_bell}
 \caption{(Colour online) (a) Temporal distribution function for a Bell-like two-photon spectral state. (b) Raw measurement data obtained from sampling the temporal distribution function using the photo-detectors. (c) Reconstruction based on the Bayesian algorithm. (d) Similarity of the measurement data and reconstructed data compared to the actual temporal distribution function, against detector response time $\gamma$.} \label{fig:composite_bell}
 \end{figure}
 
@@ -408,7 +408,7 @@ Thus, higher order photon pair production also takes place, but we will focus on
 
 A heralded PDC source comprises a PDC source and a photo-detector. The first mode is measured, and, upon measuring a single photon, we have a single photon in the other mode with high probability. This is shown in Fig.~\ref{fig:PDC_source}.
 \begin{figure}[!htb]
-\includegraphics[width=0.6\columnwidth]{../figures/PDC_source}
+\includegraphics[width=0.6\columnwidth]{figures/PDC_source}
 \caption{Single photon source via heralded parametric down-conversion (PDC). The PDC source is pumped with a classical field and emits photon pairs across two modes. Upon performing photo-detection in one of the modes we prepare a single photon in the other.} \label{fig:PDC_source}
 \end{figure}
 
@@ -440,14 +440,14 @@ While significant progress has been made in engineering spectrally separable PDC
 Steps have been made towards measuring the spectral/temporal structure of PDC states via time-delayed (i.e. HOM) interferometry \cite{bib:YoonHo03}. However, we will consider the direct approach of measurement via time-resolved photo-detection using the described reconstruction technique.
 
 \begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{../figures/composite_PDC}
+\includegraphics[width=\columnwidth]{figures/composite_PDC}
 \caption{(Colour online) (a) Temporal distribution function for a PDC photon pair (\mbox{$h/w=5$}). (b) Similarity of the measurement data and reconstructed data compared to the actual temporal distribution function, against detector response time $\gamma$. (c) Mean of the distribution. (d) Entanglement between the photons in the pair.} \label{fig:composite_PDC}
 \end{figure}
 
 In Figs.~\ref{fig:composite_PDC} \& \ref{fig:composite_PDC_3D} we plot the various quantifying measures against the height-to-width ratio of the spectral ellipsoid and detector response time, in the cases of raw measurement data and reconstructed data. Evidently, in the cases of similarity and entanglement, the raw measurement data in fact yields better outcomes than the reconstruction algorithm. On the other hand, in the case of the mean of the distribution it is evident that the reconstruction algorithm recovers the mean more accurately than the raw measurement data.
 
 \begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{../figures/PDC_3D}
+\includegraphics[width=\columnwidth]{figures/PDC_3D}
 \caption{(Colour online) (left) Raw measurement data. (right) Reconstructed data. (a) Similarity with the actual temporal distribution function. (b) Mean of the distribution (mean of actual distribution is \mbox{$\mu=0$}). (c) Spectral entanglement of the photon pair. (d) Entanglement of the actual distribution. \mbox{$h/w$} is the height-to-width ratio of the ellipsoid temporal distribution function. When \mbox{$h/w=1$} the state is spectrally separable and there is no spectral entanglement. $\gamma$ is the detector response time. Note that not all plots have the same viewing angle, so as not to obscure features.} \label{fig:composite_PDC_3D}
 \end{figure}
 
